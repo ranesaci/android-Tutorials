@@ -17,7 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".AnotherActivity" />
-        <activity android:name=".CustomListActivity"></activity>
+        <activity android:name=".CustomListActivity" />
+        <activity android:name=".FragmentTestActivity" />
+        <activity android:name=".ScrollViewActivity" />
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".RadioActivity"></activity>
     </application>
 
 </manifest>

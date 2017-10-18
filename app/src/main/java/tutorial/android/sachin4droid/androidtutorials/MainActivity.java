@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private static String TAG = "MainActivity";
     Button button;
     ListView mainActivityListView;
-    List<String> activityList = Arrays.asList(new String[] {"ActivityOne","AnotherActivity","CustomListActivity" });
+    List<String> activityList = Arrays.asList(new String[] {"ActivityOne","AnotherActivity","CustomListActivity","FragmentTestActivity" ,"ScrollViewActivity"
+    ,"SpinnerActivity","RadioActivity"});
 
 
     @Override
@@ -40,6 +41,26 @@ public class MainActivity extends AppCompatActivity {
 
                 if("CustomListActivity"== activityList.get(i) ){
                     Intent intent = new Intent(MainActivity.this, CustomListActivity.class);
+                    startActivity(intent);
+
+                }
+                if("FragmentTestActivity"== activityList.get(i) ){
+                    Intent intent = new Intent(MainActivity.this, FragmentTestActivity.class);
+                    startActivity(intent);
+
+                }
+                if("ScrollViewActivity"== activityList.get(i) ){
+                    Intent intent = new Intent(MainActivity.this, ScrollViewActivity.class);
+                    startActivity(intent);
+
+                }
+                if("SpinnerActivity"== activityList.get(i) ){
+                    Intent intent = new Intent(MainActivity.this, SpinnerActivity.class);
+                    startActivity(intent);
+
+                }
+                if("RadioActivity"== activityList.get(i) ){
+                    Intent intent = new Intent(MainActivity.this, RadioActivity.class);
                     startActivity(intent);
 
                 }

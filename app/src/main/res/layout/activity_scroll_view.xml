@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tutorial.android.sachin4droid.androidtutorials.ScrollViewActivity">
+
+    <TextView
+        android:id="@+id/scrollViewTestTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30dp"
+        android:text="ScrollView can hold only one direct child. This means that, if you have complex layout with more view controls, you must enclose them inside another standard layout like LinearLayout, TableLayout or RelativeLayout.
+You can specify layout_height and layout_width to adjust height and width of screen.
+Scrollview is ideal for screens where scrolling is required, but it is an overhead when scroll view is used to render a larger list of data. Android provides specialized adapter views like ListView, GridView and Recycler View (Introduced in Android Lollipop) are recommended for long lists.
+You should never use a ScrollView with a ListView or GridView, because they both takes care of their own vertical scrolling.
+ScrollView only supports vertical scrolling. Use HorizontalScrollView for horizontal scrolling.
+The android:fillViewport property defines whether the scrollview should stretch its content to fill the viewport. You can set the same property by calling setFillViewport(boolean) method."
+        />
+
+</LinearLayout>
+</ScrollView>
